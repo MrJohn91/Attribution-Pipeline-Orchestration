@@ -1,0 +1,84 @@
+{
+    "customer_journeys": [
+        [
+            {
+                "conversion_id": "00179676da577b9b60ddf4b5dc8af836d4314f74b83aa277a8549254d85aa82f",
+                "session_id": "7da58cbf848ffde3f453d0abec375d9ceeb8b948ed9122d4d94bb63fcc9cec49",
+                "timestamp": "2023-09-01 13:01:28",
+                "channel_label": "FB & IG Ads",
+                "holder_engagement": 1,
+                "closer_engagement": 1,
+                "conversion": 1,
+                "impression_interaction": 0
+            }
+        ],
+        [
+            {
+                "conversion_id": "001d12700b75212f67b2abde0f7a956ea9f32b6988d21b631a665e8a83e0e179",
+                "session_id": "3c98ec86179871f3b4b92952dc83636271bb3d7be46d3f060a72530525a33bc7",
+                "timestamp": "2023-09-06 19:28:42",
+                "channel_label": "FB & IG Ads",
+                "holder_engagement": 1,
+                "closer_engagement": 0,
+                "conversion": 1,
+                "impression_interaction": 0
+            },
+            {
+                "conversion_id": "001d12700b75212f67b2abde0f7a956ea9f32b6988d21b631a665e8a83e0e179",
+                "session_id": "2fadf3f88cd1df648262dc97765a33b0ef01ad63e27741f763e5cd82371ea95f",
+                "timestamp": "2023-09-07 04:28:24",
+                "channel_label": "FB & IG Ads",
+                "holder_engagement": 1,
+                "closer_engagement": 1,
+                "conversion": 1,
+                "impression_interaction": 0
+            },
+            {
+                "conversion_id": "001d12700b75212f67b2abde0f7a956ea9f32b6988d21b631a665e8a83e0e179",
+                "session_id": "6d5920eb66f75ea5e9387fc0b35e32a57337e5750ac70d22047c5c084a0f73cb",
+                "timestamp": "2023-09-07 07:49:28",
+                "channel_label": "FB & IG Ads",
+                "holder_engagement": 1,
+                "closer_engagement": 1,
+                "conversion": 1,
+                "impression_interaction": 0
+            }
+        ],
+        [
+            {
+                "conversion_id": "002f8749a00af3261ba9212717a585c4f6fd884f05d805ccd8ce63ed9c93ec6e",
+                "session_id": "ea3373c30a2cbc6f28d247f97962618d3d69e639e536d7103250c0524f2c310c",
+                "timestamp": "2023-09-07 16:47:36",
+                "channel_label": "Newsletter & Email",
+                "holder_engagement": 1,
+                "closer_engagement": 1,
+                "conversion": 1,
+                "impression_interaction": 0
+            }
+        ],
+        [
+            {
+                "conversion_id": "00552c7f169a978722abb8b959f992e3b19b54510e880607dd62c0286f8973ba",
+                "session_id": "16dd1860e3cb586ed91ff67f6448a71d740780c60dbac0baa0d29f1bae2edf4b",
+                "timestamp": "2023-09-03 21:38:53",
+                "channel_label": "Direct Traffic",
+                "holder_engagement": 1,
+                "closer_engagement": 1,
+                "conversion": 1,
+                "impression_interaction": 0
+            }
+        ],
+        [
+            {
+                "conversion_id": "00c787e3aae066482fe0f736218522dcf238acb1d0646ad4c62108a00ef6386d",
+                "session_id": "d25774cc0d284f3be7ef4d16cfa1f9b6750787814c153f249ee0b83db08ce123",
+                "timestamp": "2023-09-02 22:22:50",
+                "channel_label": "Paid Search Brand",
+                "holder_engagement": 1,
+                "closer_engagement": 1,
+                "conversion": 1,
+                "impression_interaction": 0
+            }
+        ]
+    ]
+}
