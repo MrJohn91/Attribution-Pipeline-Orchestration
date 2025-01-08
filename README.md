@@ -9,7 +9,7 @@ This project is designed to build and implement a data pipeline that automates t
 - **Python**: Used for data manipulation, API interaction, and automation tasks.
 - **SQLite**: For storing and querying the data.
 - **Airflow**: Orchestrates the pipeline, allowing tasks to run automatically on new data. It ensures that the pipeline processes new data as it arrives and runs the necessary transformations and reporting steps without manual intervention.
-- **External Attribution API: Used to compute attribution values for each session in the customer journey, based on the IHC model
+- **External Attribution API** Used to compute attribution values for each session in the customer journey, based on the IHC model
 - **Data Visualization**: Tools like Plotly are used to create visualizations for reporting.
 
 ---
