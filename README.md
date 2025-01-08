@@ -21,7 +21,7 @@ This project is designed to build and implement a data pipeline that automates t
 ### 1. Query Data from the Database
 The first step is to retrieve raw data from the **SQLite** database. The relevant tables are:
 - `session_sources`: Contains session data including user, session date/time, and channel information.
-- `conversions`: Contains conversion events (revenue and timestamps).
+- `conversions`: Contains conversion date, conversions time and Revenue.
 - `session_costs`: Contains the marketing costs associated with each session.
 
 ### 2. Transform Data
