@@ -4,8 +4,7 @@
 
 ## Overview
 
-This project is designed to automate the attribution modeling process for marketing performance analysis. The primary goal is to calculate attribution weights for different marketing channels and phases of the customer journey (Initializer, Holder, Closer) using the **IHC** (Initializer, Holder, Closer) model. The system processes data related to user sessions, marketing campaigns, and conversions, applying machine learning-based attribution techniques to determine which marketing channels and phases contribute to the conversion event. The insights provided by the pipeline assist in understanding marketing performance and ROI (Return on Investment).
-
+This project is designed to build and implement a data pipeline that automates the attribution modeling process for marketing performance analysis. The primary goal is to calculate attribution weights for different marketing channels and phases of the customer journey (Initializer, Holder, Closer) using the IHC (Initializer, Holder, Closer) model. The system processes data related to user sessions, marketing campaigns, and conversions, applying machine learning-based attribution techniques to determine which marketing channels and phases contribute to the conversion event. The insights provided by the pipeline help understand marketing performance and ROI (Return on Investment)
 
 ### Technologies Used
 
