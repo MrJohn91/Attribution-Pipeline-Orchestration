@@ -57,12 +57,19 @@ To ensure that the pipeline runs regularly and processes only new data:
 
 ### Airflow Scheduling:
 - After implementing the initial pipeline, Airflow will ensure that the process runs on a scheduled basis, checking for new data and updating the results automatically when new data is available in the database.
-
+- 
 ## Assumptions
 
-- The **SQLite** database contains complete data on sessions, conversions, and session costs.
-- The **IHC Attribution Model** is assumed to be correct and is applied to attribute the sessions based on the customer journey.
-- **Airflow** will trigger the pipeline to run at scheduled intervals, processing only new data and avoiding redundancy.
+1. **Marketing Channel Costs**:
+    - It is assumed that **organic traffic** and **direct traffic** do not have associated ad spend, so they are excluded from ROAS calculations. Other channels like paid search or social ads are expected to have ad spend associated with them.
+
+2. **Handling Missing Data**:
+    - Missing data, particularly for costs, is handled by filling empty fields with default values (e.g., a cost of `0.0` for missing cost entries in the `session_costs` table). This ensures the pipeline continues to run without data errors.
+
+
+3. **Scheduling and Automation**:
+    - The pipeline is scheduled to run daily to capture new data and generate reports. However, additional flexibility for triggering based on events or data availability could be added for real-time updates.
+
 
 ## Challenges
 
@@ -70,6 +77,9 @@ To ensure that the pipeline runs regularly and processes only new data:
     - Merging session and conversion data required careful handling of timestamps and session IDs to ensure that only relevant sessions were included in the analysis. This was particularly important to ensure that sessions occurring before conversions were considered in the customer journey.
 
 2. **API Integration**: Managing API requests and responses for attribution and handling large amounts of data while maintaining performance.
+
+3. **GitHub Push Issues**:
+    - Encountered issues when trying to push changes to GitHub, particularly due to conflicts between local and remote repositories. These issues were resolved by pulling the remote changes, resolving merge conflicts, and carefully pushing the final version of the project to the remote repository.
 
 ## Improvements
 
@@ -95,11 +105,12 @@ To ensure that the pipeline runs regularly and processes only new data:
 
 ### 3. **ROAS by Channel**
 [View Visualization](https://github.com/MrJohn91/Attribution-Pipeline-Orchestration/blob/main/images%3AScreenshots/ROAS%20by%20Channel.png)
-- **Insight**: The **Return on Ad Spend (ROAS)** metric shows that **Direct Traffic** generates a high return despite having no ad spend, suggesting organic visits are driving conversions.
+- **Insight**: Microsoft Ads and paid search have higher ROAS, suggesting that these channels are highly efficient in generating revenue relative to the cost.
+TikTok Ads and FB & IG Ads have lower ROAS, suggesting lower revenue generation per euro spent on these channels, which may require further analysis and adjustment.
 
 ### 4. **CPO Across Channels**
 [View Visualization](https://github.com/MrJohn91/Attribution-Pipeline-Orchestration/blob/main/images%3AScreenshots/CPO%20Across%20Channels.png)
-- **Insight**: The **Cost Per Order (CPO)** metric reveals that **Paid Search Brand** has the best efficiency in terms of cost per conversion.
+- **Insight**: TikTok Ads and FB & IG Ads have the highest CPO, indicating they are more expensive to acquire a customer compared to other channels which have lower CPO values.
 
 ### 5. **IHC Phase Weights**
 [View Visualization](https://github.com/MrJohn91/Attribution-Pipeline-Orchestration/blob/main/images%3AScreenshots/IHC%20phase%20weights.png)
