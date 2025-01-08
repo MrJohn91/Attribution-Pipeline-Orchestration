@@ -114,7 +114,7 @@ TikTok Ads and FB & IG Ads have lower ROAS, suggesting lower revenue generation 
 
 ### 5. **IHC Phase Weights**
 [View Visualization](https://github.com/MrJohn91/Attribution-Pipeline-Orchestration/blob/main/images%3AScreenshots/IHC%20phase%20weights.png)
-- **Insight**: This chart displays how each channel contributes across the **Initializer**, **Holder**, and **Closer** phases. Channels like **Performance Max** excel in the **Closer** phase.
+- **Insight**: The IHC Phase Weights shows the importance of each phase in the customer journey. The Holder phase has the highest weight, indicating its greater influence on maintaining user engagement and pushing them closer to conversion, while the Initializer and Closer phases have similar, moderate weights.
 
 ## Conclusion
 
