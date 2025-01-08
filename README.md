@@ -26,9 +26,6 @@ The first step is to retrieve raw data from the **SQLite** database. The relevan
 
 ### 2. Transform Data
 The data is then transformed into a suitable format for attribution:
-- **Filtering Sessions**: Filter the sessions based on conversion timestamps, ensuring that only sessions that occurred before the conversion are included.
-- **Attribute Calculations**: Using the **IHC Attribution Model**, we calculate attribution values for each session in the customer journey. This includes assigning scores to each session based on whether it was part of the **initializer**, **holder**, or **closer** phase of the journey.
-
 The transformation includes:
 - **Merging session sources with conversions** on `user_id` to associate sessions with conversions.
 - **Filtering sessions** to include only those that occurred **before the conversion** based on sessions date and time
