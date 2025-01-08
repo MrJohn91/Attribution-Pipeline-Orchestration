@@ -1,7 +1,6 @@
 # Attribution-Pipeline-Orchestration
 
-
-<img src="https://github.com/MrJohn91/Attribution-Pipeline-Orchestration/blob/main/images%3AScreenshots/Diagram.png" height="400"/>
+<img src="https://github.com/MrJohn91/Attribution-Pipeline-Orchestration/blob/main/images%3AScreenshots/Diagram.png" height="400" width="600"/>
 
 ## Overview
 
