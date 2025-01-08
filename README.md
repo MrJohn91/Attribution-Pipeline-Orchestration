@@ -3,7 +3,7 @@
 <img src="https://github.com/MrJohn91/Attribution-Pipeline-Orchestration/blob/main/images%3AScreenshots/Diagram.png" height="400" width="800"/>
 
 ## Overview
-This project is designed to build and implement a data pipeline that automates the attribution modeling process for marketing performance analysis. The primary goal is to calculate attribution weights for different marketing channels and phases of the customer journey (Initializer, Holder, Closer) using the IHC (Initializer, Holder, Closer) model. The system processes data related to user sessions, marketing campaigns, and conversions, applying the IHC attribution technique to determine which marketing channels and phases contribute to the conversion event. The insights provided by the pipeline help understand marketing performance and ROI (Return on Investment).
+This project is designed to build and implement a data pipeline that automates the attribution modeling process for marketing performance analysis. The primary goal is to calculate attribution weights for different marketing channels and phases of the customer journey (Initializer, Holder, Closer) using the IHC model. The system processes data related to user sessions, marketing campaigns, and conversions, applying the IHC attribution technique to determine which marketing channels and phases contribute to the conversion event. The insights provided by the pipeline help understand marketing performance and ROI (Return on Investment).
 
 ### Technologies Used
 - **Python**: Used for data manipulation, API interaction, and automation tasks.
