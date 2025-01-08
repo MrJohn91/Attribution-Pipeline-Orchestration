@@ -115,7 +115,7 @@ To ensure that the pipeline runs regularly and processes only new data:
 
 ## Conclusion
 
-This pipeline automates the attribution of conversions to marketing channels using the **IHC Attribution Model**, powered by **Airflow** for automation and scheduling. It processes data from an **SQLite** database, sends it to the **IHC Attribution API**, and writes the results back to the database. Visualizations provide insights into channel performance, enabling more informed marketing decisions.
+This project builds a pipeline to attribute conversions to marketing channels using the IHC Attribution Model. Initially developed manually, the pipeline processes data from an SQLite database, sends it to the IHC Attribution API, and stores the results back. Airflow was then integrated to automate the pipeline for future data processing, ensuring automatic execution when new data is available. Visualizations from the processed data provide insights into marketing channel performance, supporting data driven decision making, marketing strategy and ROI optimization.
 
 ## Next Steps
 
