@@ -26,7 +26,7 @@ The first step is to retrieve raw data from the **SQLite** database. The relevan
 - **Merging session sources with conversions** on `user_id` to associate sessions with conversions.
 - **Filtering sessions** to include only those that occurred **before the conversion** based on sessions date and time
 - **Grouping sessions** by `conv_id`. After filtering sessions that occurred before the conversion, we had 3703 sessions. When grouped by unique conv_id, we ended up with 1940 valid conversions, indicating that not all sessions had a valid conversion
-- **Transforming customer journey data** into the required format for API input, including session details like channel, timestamps, and engagement indicators.
+- **Transforming customer journey data** into the required format for API input, including session details like channel label, timestamps, and engagement indicators.
 
 ### 3. Send Transformed Data to the IHC API
 After transforming the data, it is sent to the **IHC Attribution API**, which computes the attribution results (IHC scores) for each session. The result is an attribution value indicating the contribution of each channel at different stages of the customer journey.
