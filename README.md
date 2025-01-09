@@ -23,8 +23,6 @@ The first step is to retrieve raw data from the **SQLite** database. The relevan
 - `session_costs`: Contains the marketing costs associated with each session.
 
 ### 2. Transform Data
-The data is then transformed into a suitable format for attribution:
-The transformation includes:
 - **Merging session sources with conversions** on `user_id` to associate sessions with conversions.
 - **Filtering sessions** to include only those that occurred **before the conversion** based on sessions date and time
 - **Grouping sessions** by `conv_id`. After filtering sessions that occurred before the conversion, we had 3703 sessions. When grouped by unique conv_id, we ended up with 1940 valid conversions, indicating that not all sessions had a valid conversion
