@@ -36,7 +36,7 @@ After transforming the data, it is sent to the **IHC Attribution API**, which co
 ### 4. Write Attribution Results to the Database
 Once the IHC attribution results are returned, we store the results back into the database:
 - **`attribution_customer_journey`** table: Contains the IHC scores for each session.
-- **Metrics Calculation**: Calculate key metrics such as **CPO (Cost Per Order)** and **ROAS (Return on Ad Spend)** for each marketing channel.
+- **Metrics Calculation**: Calculating key metrics such as **CPO (Cost Per Order)** and **ROAS (Return on Ad Spend)** for each marketing channel.
 - **`channel_reporting`** table: Stores aggregated metrics such as **CPO** and **ROAS** by channel for further analysis.
 
 ### 5. Query and Export Data from the Database
@@ -64,7 +64,7 @@ To ensure that the pipeline runs regularly and processes only new data:
     - It is assumed that **organic traffic** and **direct traffic** do not have associated ad spend, so they are excluded from ROAS calculations. Other channels like paid search or social ads are expected to have ad spend associated with them.
 
 2. **Handling Missing Data**:
-    - Missing data, particularly for costs, is handled by filling empty fields with default values (e.g., a cost of `0.0` for missing cost entries in the `session_costs` table). This ensures the pipeline continues to run without data errors.
+    - Missing data, particularly for costs, is handled by filling empty fields with values (e.g., a cost of `0.0` for missing cost entries in the `session_costs` table). This ensures that these rows are included in calculations with an assumption like A user might visit the website through organic search or direct traffic, which typically doesn’t incur a cost. This ensures the pipeline continues to run without data errors.
 
 3. **Scheduling and Automation**:
     - The pipeline is scheduled to run daily to capture new data and generate reports. However, additional flexibility for triggering based on events or data availability could be added for real-time updates.
