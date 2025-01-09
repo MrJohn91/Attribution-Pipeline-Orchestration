@@ -82,10 +82,8 @@ To ensure that the pipeline runs regularly and processes only new data:
 1. **Scalability**:
     - The current pipeline works well for a moderate amount of data. To handle larger datasets, it could be scaled by integrating cloud storage solutions like **Azure Data Lake Storage** or **Azure Blob Storage**, or by using distributed processing frameworks like **Apache Spark** with **Databricks**.
 
-## Enhancing Data Quality
-
-- **Data Validation**: Ensure that the pipeline performs thorough data validation before processing. This includes:
-  - Checking for missing or null values in critical fields.
+2. **Enhancing data quality**: Ensuring that the pipeline performs thorough data validation before processing.
+  - Checking for missing or null values in important fields.
   - Ensuring that all required fields are filled before processing.
   - Confirming that the data types of fields match the expected formats.
 
