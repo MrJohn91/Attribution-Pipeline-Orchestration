@@ -83,9 +83,9 @@ To ensure that the pipeline runs regularly and processes only new data:
     - The current pipeline works well for a moderate amount of data. To handle larger datasets, it could be scaled by integrating cloud storage solutions like **Azure Data Lake Storage** or **Azure Blob Storage**, or by using distributed processing frameworks like **Apache Spark** with **Databricks**.
 
 2. **Enhancing data quality**: Ensuring that the pipeline performs thorough data validation before processing.
-  - Checking for missing or null values in important fields.
-  - Ensuring that all required fields are filled before processing.
-  - Confirming that the data types of fields match the expected formats.
+    - Checking for missing or null values in important fields.
+    - Ensuring that all required fields are filled before processing.
+    - Confirming that the data types of fields match the expected formats.
 
 3. **Real-Time Processing**:
     - The pipeline currently runs on a fixed schedule. It could be enhanced to support real-time data processing, where the pipeline is triggered automatically by the arrival of new data or specific events, without requiring manual intervention.
