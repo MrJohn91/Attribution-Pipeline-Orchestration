@@ -6,8 +6,8 @@
 This project is designed to build and implement a data pipeline that automates the attribution modeling process for marketing performance analysis. The primary goal is to calculate attribution weights for different marketing channels and phases of the customer journey (Initializer, Holder, Closer) using the IHC model. The system processes data related to user sessions, marketing campaigns, and conversions, applying the IHC attribution technique to determine which marketing channels and phases contribute to the conversion event. The insights provided by the pipeline help understand marketing performance and ROI (Return on Investment).
 
 ### Technologies Used
-- **Python**: Used for API interaction, and automation tasks.
-- - **Pandas**: Used for data manipulation
+- **Python**: Core programming language for data processing, API interaction, and automation tasks.
+- **Pandas**: Used for data manipulation
 - **SQLite**: For storing and querying the data.
 - **Airflow**: Orchestrates the pipeline, allowing tasks to run automatically on new data. It ensures that the pipeline processes new data as it arrives and runs the necessary transformations and reporting steps without manual intervention.
 - **External Attribution API**: Used to compute attribution values for each session in the customer journey, based on the IHC model
